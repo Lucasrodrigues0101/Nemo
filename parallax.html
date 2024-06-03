@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="css/paralax.css">
+    
+</head>
+<body>
+    <section>
+        <div class="wave" id="wave1" style="--i:1;"></div>
+        <div class="wave" id="wave2" style="--i:2;"></div>
+        <div class="wave" id="wave3" style="--i:3;"></div>
+        <div class="wave" id="wave4" style="--i:4;"></div>
+    </section>
+    <div class="sec">
+        <h2>Nemo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non architecto a ducimus qui iste harum ipsam dignissimos sunt, esse, fuga veritatis dicta velit repudiandae? Fugiat voluptatibus iure sit suscipit porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dicta vel corporis culpa vero incidunt distinctio? Qui reprehenderit modi neque explicabo aliquam similique veniam ratione labore mollitia? Obcaecati, autem possimus?<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non architecto a ducimus qui iste harum ipsam dignissimos sunt, esse, fuga veritatis dicta velit repudiandae? Fugiat voluptatibus iure sit suscipit porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dicta vel corporis culpa vero incidunt distinctio? Qui reprehenderit modi neque explicabo aliquam similique veniam ratione labore mollitia? Obcaecati, autem possimus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non architecto a ducimus qui iste harum ipsam dignissimos sunt, esse, fuga veritatis dicta velit repudiandae? Fugiat voluptatibus iure sit suscipit porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dicta vel corporis culpa vero incidunt distinctio? Qui reprehenderit modi neque explicabo aliquam similique veniam ratione labore mollitia? Obcaecati, autem possimus?<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non architecto a ducimus qui iste harum ipsam dignissimos sunt, esse, fuga veritatis dicta velit repudiandae? Fugiat voluptatibus iure sit suscipit porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dicta vel corporis culpa vero incidunt distinctio? Qui reprehenderit modi neque explicabo aliquam similique veniam ratione labore mollitia? Obcaecati, autem possimus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non architecto a ducimus qui iste harum ipsam dignissimos sunt, esse, fuga veritatis dicta velit repudiandae? Fugiat voluptatibus iure sit suscipit porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dicta vel corporis culpa vero incidunt distinctio? Qui reprehenderit modi neque explicabo aliquam similique veniam ratione labore mollitia? Obcaecati, autem possimus?<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non architecto a ducimus qui iste harum ipsam dignissimos sunt, esse, fuga veritatis dicta velit repudiandae? Fugiat voluptatibus iure sit suscipit porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dicta vel corporis culpa vero incidunt distinctio? Qui reprehenderit modi neque explicabo aliquam similique veniam ratione labore mollitia? Obcaecati, autem possimus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non architecto a ducimus qui iste harum ipsam dignissimos sunt, esse, fuga veritatis dicta velit repudiandae? Fugiat voluptatibus iure sit suscipit porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dicta vel corporis culpa vero incidunt distinctio? Qui reprehenderit modi neque explicabo aliquam similique veniam ratione labore mollitia? Obcaecati, autem possimus?<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non architecto a ducimus qui iste harum ipsam dignissimos sunt, esse, fuga veritatis dicta velit repudiandae? Fugiat voluptatibus iure sit suscipit porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dicta vel corporis culpa vero incidunt distinctio? Qui reprehenderit modi neque explicabo aliquam similique veniam ratione labore mollitia? Obcaecati, autem possimus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non architecto a ducimus qui iste harum ipsam dignissimos sunt, esse, fuga veritatis dicta velit repudiandae? Fugiat voluptatibus iure sit suscipit porro Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dicta vel corporis culpa vero incidunt distinctio? Qui reprehenderit modi neque explicabo aliquam similique veniam ratione labore mollitia? Obcaecati, autem possimus?</p>
+    </div>
+
+    <script>
+        let wave1 = document.getElementById('wave1');
+        let wave2 = document.getElementById('wave2');
+        let wave3 = document.getElementById('wave3');
+        let wave4 = document.getElementById('wave4');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY; 
+            
+            wave1.style.backgroundPositionX =  400 + value * 4 + 'px';
+            wave2.style.backgroundPositionX =  300 + value * -4 + 'px';
+            wave3.style.backgroundPositionX =  200 + value * 2 + 'px';
+            wave4.style.backgroundPositionX =  100 + value * -2 + 'px';
+        })
+
+    </script>
+    
+</body>
+</html>
