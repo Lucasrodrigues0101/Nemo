@@ -1,0 +1,19 @@
+* {
+    color: white;
+}
+
+body {
+    height: 180vh;
+    background: rgb(93,198,246);
+    background: linear-gradient(180deg, rgba(93,198,246,1) 0%, rgba(8,8,51,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho .menu {
+    align-items: center;
+    display: flex;
+    gap: 20vh 2vw;
+    margin-left: 41%;
+  }
+

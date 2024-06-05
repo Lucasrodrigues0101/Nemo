@@ -11,7 +11,12 @@ body {
     overflow-x: hidden;
 }
 
-
+.cabecalho .menu {
+    align-items: center;
+    display: flex;
+    gap: 20vh 2vw;
+    margin-left: 41%;
+  }
 
 .parallax {
     position: relative;
@@ -72,7 +77,8 @@ body {
 }
 
 .sec {
-    background-color: #5dc6f6;
+    background: rgb(93,198,246);
+    background: linear-gradient(180deg, rgba(93,198,246,1) 0%, rgba(8,8,51,1) 100%);
     padding: 50px 20px; /* Alterado para padding responsivo */
     text-align: center;
 }

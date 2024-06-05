@@ -1,0 +1,121 @@
+* {
+    color: white;
+}
+
+body {
+    height: 100vh;
+    background: rgb(93,198,246);
+    background: linear-gradient(180deg, rgba(93,198,246,1) 0%, rgba(8,8,51,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho .menu {
+    align-items: center;
+    display: flex;
+    gap: 20vh 2vw;
+    margin-left: 41%;
+  }
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.6944vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13.8889vh;
+}
+
+.Lucas p {
+    margin-top: 1.3889vh;
+    margin-left: 13.8889vw;
+}
+
+.Lucas > img {
+    width: 17.3611vw;
+    height: 17.3611vw;
+    border-radius: 12.5vw;
+    margin-left: 12.5vw;
+}
+
+.Oscar p {
+    margin-top: 1.3889vh;
+    margin-left: 10.4167vw;
+}
+
+.Oscar > img {
+    width: 17.3611vw;
+    max-height: 17.3611vw;
+    border-radius: 12.5vw;
+    margin-left: 6.9444vw;
+}
+
+.Nicolas p {
+    margin-top: 1.3889vh;
+    margin-left: 2.2222vw;
+}
+
+.Nicolas > img {
+    width: 17.3611vw;
+    height: 17.3611vw;
+    border-radius: 12.5vw;
+}
+
+@media (max-width: 1024px) {
+    .informacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .Lucas, .Oscar, .Nicolas {
+        text-align: center;
+    }
+
+    .Lucas > img, .Oscar > img, .Nicolas > img {
+        margin-left: 0;
+        width: 50%;
+        height: auto;
+    }
+
+    .Lucas p, .Oscar p, .Nicolas p {
+        margin-left: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho .menu ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cabecalho .menu li {
+        margin: 10px 0;
+    }
+
+    .logo > img {
+        margin-left: 0;
+        max-width: 20vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .Lucas > img, .Oscar > img, .Nicolas > img {
+        width: 70%;
+    }
+
+    .cabecalho .menu {
+        gap: 20px 10px;
+    }
+
+    header {
+        padding: 1vh 1vw;
+    }
+
+    .cabecalho .menu ul {
+        margin-right: 0;
+    }
+}
