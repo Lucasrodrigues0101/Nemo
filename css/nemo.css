@@ -2,8 +2,7 @@
 .content{
     position: relative;
     display: flex;
-    min-height: 100vh;
-    background: #ffffff;
+    min-height: 92vh;
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
