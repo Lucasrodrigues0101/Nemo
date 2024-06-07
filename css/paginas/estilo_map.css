@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;900&display=swap');
 
-
-
 * {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -31,6 +29,37 @@ body {
     color: black;
     font-weight: Bold;
   }
+
+  .home {
+    display: flex;
+    margin-top: 2vh;
+    margin-left: 10%;
+}
+
+.home > iframe {
+    margin-top: 1.3889vh;
+    width: 59.625vw;
+    height: 45.1111vh;
+    border: 0;
+}
+
+.maps {
+    margin-left: 9.7222vw;
+    width: 59.625vw;
+    height: 45.1111vh;
+    border-radius: 10px;
+    
+}
+
+  #mensagem-sucesso {
+    display: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
 
   form {
     --bg-light: #efefef;
