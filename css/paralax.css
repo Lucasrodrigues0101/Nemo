@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap');
 
-
 header {
     margin: 0;
     padding: 0;
@@ -25,19 +24,21 @@ body {
 .cabecalho .menu {
     align-items: center;
     display: flex;
-    gap: 20vh 2vw;
-    margin-left: 33%;
+    gap: 2vw;
+    justify-content: center;
     margin-top: 3vh;
-  }
 
-  .menu a {
+}
+
+.menu a {
     padding: 12.5px 30px;
     border: 0;
     border-radius: 100px;
     background-color: #37aee6e5;
     color: #ffffff;
-    font-weight: Bold;
-  }
+    font-weight: bold;
+    text-align: center;
+}
 
 .parallax {
     position: relative;
@@ -49,7 +50,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
 .wave {
@@ -100,13 +100,12 @@ body {
 .sec {
     background: rgb(93,198,246);
     background: linear-gradient(180deg, rgba(93,198,246,1) 0%, rgba(8,8,51,1) 100%);
-    padding: 50px 20px; /* Alterado para padding responsivo */
+    padding: 50px 20px;
     text-align: center;
-    
 }
 
 .sec h2 {
-    font-size: 2.5em; /* Ajustado para responsividade */
+    font-size: 2.5em;
     color: #fff;
 }
 
@@ -117,31 +116,39 @@ body {
     margin: 0 auto;
 }
 
-/* Estilos adicionais para responsividade */
+
 @media (max-width: 768px) {
     .logo h2 {
-        font-size: 10vw; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 10vw; 
     }
 
     .sec h2 {
-        font-size: 2em; /* Ajusta o tamanho da fonte para a seção em telas menores */
+        font-size: 2em; 
     }
 
     .sec p {
-        font-size: 1em; /* Ajusta o tamanho da fonte para parágrafos em telas menores */
+        font-size: 1em; 
+    }
+
+    .menu a {
+        padding: 10px 20px;
     }
 }
 
 @media (max-width: 480px) {
     .logo h2 {
-        font-size: 12vw; /* Ajusta o tamanho da fonte para telas muito pequenas */
+        font-size: 12vw; 
     }
 
     .sec h2 {
-        font-size: 1.5em; /* Ajusta o tamanho da fonte para a seção em telas muito pequenas */
+        font-size: 1.5em;
     }
 
     .sec p {
-        font-size: 0.9em; /* Ajusta o tamanho da fonte para parágrafos em telas muito pequenas */
+        font-size: 0.9em; 
     }
-}
+
+    .menu a {
+        padding: 8px 15px;
+    }
+    }
